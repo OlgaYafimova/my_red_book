@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page-content %}
+{% for item in key_red_book_1item %}
+    <div class="container_1red_books_item">
+        <h1>{{item.name}}</h1>
+        <p>Латынь: <b>{{item.name_L}}</b></p>
+        <p>Белорусское название: <b>{{item.name_B}}</b></p>
+        <p>Приоритет сохранности: <b>{{item.priority}}</b></p>
+    </div>
+{% endfor %}
+{% endblock %}

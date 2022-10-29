@@ -1,0 +1,15 @@
+{% load static %}
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'url_red_book' %}"><h3>Красная книга</h3></a>
+    </nav>
+{% block page-content %}
+{% endblock %}
+</body>
+</html>

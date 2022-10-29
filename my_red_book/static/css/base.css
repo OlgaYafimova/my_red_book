@@ -1,0 +1,48 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: lightgreen;
+}
+
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: mediumseagreen;
+}
+
+nav a {
+    color:darkgreen;
+    text-decoration:none;
+    padding:20px;
+}
+
+nav a:hover{
+    background-color:limegreen;
+}
+
+.link:hover{
+    background-color: lightgoldenrodyellow;
+}
+
+.container_1red_books_item{
+    display: inline-block;
+    width: 280px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius:15px;
+    text-align:center;
+    text-decoration:none;
+}
+.link{
+    color: black;
+    display: flex;
+    width: 280px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius:15px;
+    text-align:center;
+    text-decoration:none;
+}

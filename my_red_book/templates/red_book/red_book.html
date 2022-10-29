@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page-content %}
+    <div>
+        {% for item in key_red_book_values %}
+            <div class="container_1red_books_item">
+                <a class="link" href="{% url 'url_detail_red_book' item.id %}">
+                    <div>
+                        <h1>{{item.name}}</h1>
+                        <p>Латынь: <b>{{item.name_L}}</b></p>
+                        <p>Белорусское название: <b>{{item.name_B}}</b></p>
+                        <p>Приоритет сохранности: <b>{{item.priority}}</b></p>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
